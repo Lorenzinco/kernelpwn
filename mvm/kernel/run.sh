@@ -1,0 +1,12 @@
+qemu-system-x86_64 \
+    -m 128M \
+    -s \
+    -nographic \
+    -kernel "bzImage" \
+    -append "nokaslr console=ttyS0 panic=-1 oops=panic pti=on quiet" \
+    -no-reboot \
+    -netdev user,id=net \
+    -cpu qemu64,+smep,+smap,+rdrand \
+    -initrd "./initramfs.cpio.gz" \
+    -monitor /dev/null \
+    -drive file=flag.txt,format=raw,index=0,media=disk

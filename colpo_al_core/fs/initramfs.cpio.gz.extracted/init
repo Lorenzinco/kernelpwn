@@ -1,0 +1,22 @@
+#!/bin/sh
+
+mount -t proc none /proc
+mount -t sysfs none /sys
+sysctl -w kernel.perf_event_paranoid=1
+
+cat <<EOF
+
+
+Boot took $(cut -d' ' -f1 /proc/uptime) seconds
+
+
+Welcome to Italy's core recipes, try to modify one and you are done! 
+
+EOF
+chmod 600 /flag
+chown 0.0 /flag
+insmod ez_ker.ko
+mknod -m 666 /dev/vuln c `grep ez_ker /proc/devices | awk '{print $1;}'` 0
+su ctf
+/bin/sh
+#exec su -l ctf
