@@ -6,7 +6,7 @@ Repository to download the challenges from is [this one](https://github.com/sajj
 |-------|:---:|:--------:|:-:|:-:|
 | mvm   |(training teamitaly 2024) | Stack based overflow, return to user, context switching | ✅ | [🔗](#) |
 |colpo_al_core |   hackappatoi 2023 | modprobe_path | ✅ | [🔗](https://github.com/sajjadium/ctf-archives/tree/main/ctfs/Hackappatoi/2023/pwn/Colpo_al_core) |
-|physler | BRICS+ 2024 | ?              | ❌ | [🔗](https://github.com/sajjadium/ctf-archives/tree/main/ctfs/BRICS%2B/2024/Quals/pwn/physler) |
+|physler | BRICS+ 2024 | Physical addresses | ✅ | [🔗](https://github.com/sajjadium/ctf-archives/tree/main/ctfs/BRICS%2B/2024/Quals/pwn/physler) |
 |kRCE   |zer0pts 2022| ?                | ❌ | [🔗](https://github.com/sajjadium/ctf-archives/tree/main/ctfs/zer0pts/2022/pwn/krce) |
 |empdb  |backdoor 2023| ?               | ❌ | [🔗](https://github.com/sajjadium/ctf-archives/tree/main/ctfs/BackdoorCTF/2023/pwn/EmpDB) |
 |family_recipes|    teamitaly 2022 | ?  | ❌ | [🔗](#) |

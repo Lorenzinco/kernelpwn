@@ -1,0 +1,2 @@
+::sysinit:/etc/init.d/rcS
+::once:-sh -c 'setuidgid 1000 sh; poweroff'

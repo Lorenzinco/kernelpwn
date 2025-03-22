@@ -1,0 +1,18 @@
+#!/bin/sh
+
+/bin/busybox --install -s
+
+stty raw -echo
+
+chown -R 0:0 /
+
+mkdir -p /proc && mount -t proc none /proc
+mkdir -p /dev  && mount -t devtmpfs devtmpfs /dev
+mkdir -p /tmp  && mount -t tmpfs tmpfs /tmp
+
+chmod 400 /proc/kallsyms
+chmod 700 /root
+chmod 400 /root/flag.txt
+
+insmod /physler.ko
+chmod 666 /dev/physler
